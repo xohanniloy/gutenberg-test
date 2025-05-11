@@ -1,0 +1,81 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/cv-gutenberg-block",
+  "version": "0.1.0",
+  "title": "Cv Gutenberg Block - Test",
+  "category": "widgets",
+  "description": "Example block scaffolded with Create Block tool.",
+  "example": {
+    "attributes": {
+      "className": "wp-block-create-block-cv-gutenberg-block"
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Hello from CV Gutenberg Block"
+    },
+    "tag": {
+      "type": "string",
+      "default": "h2"
+    },
+    "titleColor": {
+      "type": "string",
+      "default": "#444444"
+    },
+    "BgColor": {
+      "type": "string",
+      "default": "#444444"
+    },
+    "gradientBg": {
+      "type": "string"
+    },
+    "Padding": {
+      "type": "object",
+      "default": {
+        "top": "20",
+        "right": "20",
+        "bottom": "20",
+        "left": "20"
+      }
+    },
+    "radius": {
+      "type": "number",
+      "default": "0"
+    },
+    "url": {
+      "type": "string"
+    },
+    "alt": {
+      "type": "string"
+    },
+    "id": {
+      "type": "number"
+    },
+    "gallery": {
+      "type": "array"
+    },
+    "repeatIcon": {
+      "type": "array",
+      "default": []
+    }
+  },
+  "supports": {
+    "color": {
+      "background": false,
+      "text": true
+    },
+    "html": false,
+    "typography": {
+      "fontSize": true
+    },
+    "anchor": true,
+    "align": true
+  },
+  "textdomain": "cv-gutenberg-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}
